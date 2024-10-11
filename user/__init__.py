@@ -1,2 +1,2 @@
 from .app import user
-from .views import render_user
+from .views import render_user, render_authorization, render_register

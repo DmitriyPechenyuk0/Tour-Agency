@@ -3,3 +3,34 @@
 {% block title %}
 User
 {% endblock %}
+
+{% blockbody %}
+
+<a href="/registration">REGISTRATION</a>
+
+<div id="message">
+    <div>
+        <p>CONFIRMED</p>
+        <a href="">AUTHORIZATION</a>
+    </div>
+</div>
+
+
+<a href="/authorization" >AUTHORIZATION</a>
+
+<form method="post">
+    <h3>Login or email</h3>
+    <div class="center">
+        <input type="text" name="login">
+    </div>
+    <h3>Password</h3>
+    <div class="center">
+        <input type="password" name="password">
+    </div>
+    <div class="center">
+        <button id="login-confirm-button" type="submit">SEND</button>
+    </div>
+</form>
+
+
+{% endblock %}
