@@ -1,25 +1,24 @@
-{% extends 'base.html'%}
+{% extends 'base.html' %}
 
 {% block title %}
-    authorization
+    Registration
 {% endblock %}
 
-{% blockbody %}
 
+{% block content %}
 
 <form method="post">
-    <h3>Login or email</h3>
+    <h3>Username</h3>
     <div class="center">
-        <input type="text" name="login">
+        <input type="text" class="field" name="username">
     </div>
     <h3>Password</h3>
     <div class="center">
-        <input type="password" name="password">
+        <input type="password" class="field" name="password">
     </div>
     <div class="center">
         <button id="login-confirm-button" type="submit">SEND</button>
     </div>
 </form>
-
 
 {% endblock %}
