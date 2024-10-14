@@ -1,5 +1,79 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Home
+Туристична агенція
+{% endblock %}
+
+
+{% block content %}
+
+<div class="form-div">
+    <form name="feedback" class="form-to-answer" method="post">
+        <div class="input-div"> 
+            <h1 class="leave-feedback-title">Залишити відгук</h1>
+            <input class="inputs input" placeholder="Ім'я" type="text"             name="name">
+            <input class="inputs input" placeholder="Електронна пошта" type="text" name="email">
+            <textarea class="inputs textarea" placeholder="Коментар" form="feedback" name="description"></textarea>
+            <input type="submit" class="button-input" value="Залишити відгук" name="submit">
+        </div>
+    </form>
+</div>
+
+
+<style>
+    .body{
+        font-family: 'Montserrat Regular';
+    }
+    .input-div{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        width: max-content;
+        align-items: center;
+    }
+    .form-div{
+        display: flex;
+        margin: 0 auto;
+        height: max-content;
+        width: max-content;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 20px;
+        background-color: #F7F7F7;
+    }
+    .leave-feedback-title{
+        text-align: center;
+        font-family: 'Montserrat Regular';
+        font-size: medium;
+    }
+    .inputs{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .input{
+        height: auto;
+        width: 300px;
+        height: 20px;
+    }
+    .textarea{
+        resize: vertical;
+        height: 80px;
+        width: 300px;
+    }
+    .button-input{
+        margin-top: 20px;
+        width: 140px;
+        font-family: 'Montserrat Regular';
+    }
+
+    .input::placeholder{
+        padding-left: 5px;
+        font-family: 'Montserrat Regular';
+    }
+    .textarea::placeholder{
+        padding-left: 5px;
+        font-family: 'Montserrat Regular';
+    }
+</style>
+
 {% endblock %}

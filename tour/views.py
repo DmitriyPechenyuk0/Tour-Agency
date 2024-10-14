@@ -1,4 +1,4 @@
-import flask, os, pandas
+import flask
 from main.settings import DATABASE
 from .models import Tour
 
