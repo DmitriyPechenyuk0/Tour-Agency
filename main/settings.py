@@ -22,4 +22,8 @@ project.config['MAIL_USERNAME'] = 'touragent.practice@gmail.com'
 project.config['MAIL_PASSWORD'] = 'prwp rafv yylt xfgu'  
 project.config['MAIL_DEFAULT_SENDER'] = 'touragent.practice@gmail.com'
 
+mail = Mail(project)
+
+
+
     
