@@ -5,7 +5,7 @@ from tour import render_tour, tour
 
 
 
-project.add_url_rule(rule='/', view_func=render_home)
+project.add_url_rule(rule='/', view_func=render_home, methods=['GET', 'POST'])
 
 project.add_url_rule(rule='/tour', view_func=render_tour)
 

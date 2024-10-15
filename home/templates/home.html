@@ -7,20 +7,45 @@
 
 {% block content %}
 
-<div class="form-div">
-    <form name="feedback" class="form-to-answer" method="post">
-        <div class="input-div"> 
-            <h1 class="leave-feedback-title">Залишити відгук</h1>
-            <input class="inputs input" placeholder="Ім'я" type="text"             name="name">
-            <input class="inputs input" placeholder="Електронна пошта" type="text" name="email">
-            <textarea class="inputs textarea" placeholder="Коментар" form="feedback" name="description"></textarea>
-            <input type="submit" class="button-input" value="Залишити відгук" name="submit">
-        </div>
-    </form>
-</div>
+<header>
+    <div class="header">
+        <a href="/tour" class="tour url">Путівки</a>
+        <a href="/registration" class="registration url">Реєстрація</a>
+        <a href="/authorization" class="authorization url">Авторизація</a>
+    </div>
+</header>
+<main>
+    <div class="form-div">
+        <form name="feedback" class="form-to-answer" method="post">
+            <div class="input-div"> 
+                <h1 class="leave-feedback-title">Залишити відгук</h1>
+                <input class="inputs input" placeholder="Ім'я" type="text"               name="name">
+                <input class="inputs input" placeholder="Електронна пошта" type="text"   name="email">
+                <textarea class="inputs textarea" placeholder="Коментар" name="description"></textarea>
+                <input type="submit" class="button-input" value="Залишити відгук"        name="submit">
+            </div>
+        </form>
+    </div>
+</main>
+
 
 
 <style>
+    .header{
+        display: flex;
+        height: 60px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .url{
+        display: flex;
+        text-decoration: none;
+        color: black;
+        margin-left: 60px;
+        margin-top: 20px;
+        font-family: 'Montserrat Regular';
+    }
     .body{
         font-family: 'Montserrat Regular';
     }
@@ -34,6 +59,7 @@
     .form-div{
         display: flex;
         margin: 0 auto;
+        margin-top: 10px;
         height: max-content;
         width: max-content;
         padding-left: 10px;
