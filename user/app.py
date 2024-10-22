@@ -1,7 +1,7 @@
 import flask
 
 user = flask.Blueprint(
-    name='user_app',
+    name='user',
     import_name='user',
     template_folder='templates'
 )
