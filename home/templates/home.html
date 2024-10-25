@@ -10,9 +10,13 @@
 <header>
     <div class="header">
         <a href="/tour" class="tour url">Путівки</a>
-        <h1>{{ }}</h1>
-        <a href="/registration" class="registration url">Реєстрація</a>
-        <a href="/authorization" class="authorization url">Авторизація</a>
+        {% if not user %}
+            <a href="/registration" class="registration url">Реєстрація</a>
+            <a href="/authorization" class="authorization url">Авторизація</a>
+        {% endif %}
+        {% if user.username.type == str %}
+            <div class="username"><a class="">{{ user.username }}</a></div>
+        {% endif %}
 
 
     </div>
@@ -43,8 +47,16 @@
         top: 0px;
         left: 0px;
         background-color: #ffffff;
+        text-align: center;
     }
-
+    .username{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-family: 'Montserrat Regular';
+    }
     .url{
         display: flex;
         text-decoration: none;

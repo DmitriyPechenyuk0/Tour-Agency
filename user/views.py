@@ -12,6 +12,7 @@ def render_register():
         )
         DATABASE.session.add(user)
         DATABASE.session.commit()
+        return flask.redirect("/authorization")
     return flask.render_template(template_name_or_list='registration.html')
 
 def render_authorization():

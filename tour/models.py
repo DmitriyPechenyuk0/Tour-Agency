@@ -1,6 +1,7 @@
 from main.settings import DATABASE
+from flask_login import UserMixin
 
-class Tour(DATABASE.Model):
+class Tour(DATABASE.Model, UserMixin):
     id=DATABASE.Column(DATABASE.Integer(), primary_key=True)
     title=DATABASE.Column(DATABASE.String(255))
     date=DATABASE.Column(DATABASE.String(255))
