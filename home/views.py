@@ -1,8 +1,11 @@
 import flask, flask_mail
+from flask_login import current_user
 from  main.flask_mail_config import mail
 
 
 def render_home():
+
+    user = current_user
 
     if flask.request.method == 'POST':
         try:
@@ -16,7 +19,8 @@ def render_home():
             mail.send(message=message)
         except Exception as exeption:
             print(exeption)
-    return flask.render_template(template_name_or_list='home.html')
+
+    return flask.render_template(template_name_or_list='home.html', user = user)
     
 
 

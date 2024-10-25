@@ -17,7 +17,7 @@ Tour
         <p class="all-tours-title">Всі путівки</p>
     {% for tour in tours %}
         <div class="tour">
-            <p class="tour-title tour-component"><a class="url-to-page" href="/tour">{{ tour.title }}</a></p>
+            <p class="tour-title tour-component"><a class="url-to-page" href="/tour_{{ tour.id }}">{{ tour.title }}</a></p>
             <p class="tour-date tour-component">{{ tour.date }}</p>
             <p class="tour-country tour-component">{{ tour.country }}</p>
         </div>

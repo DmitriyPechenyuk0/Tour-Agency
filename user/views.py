@@ -1,5 +1,6 @@
 import flask
 from .models import User, DATABASE
+from flask_login import current_user, login_user
 
 
 def render_register():
@@ -17,6 +18,7 @@ def render_authorization():
     if flask.request.method == "POST":
         for user in User.query.filter_by(username = flask.request.form['username']):
             if user.password == flask.request.form["password"]:
+                login_user(user)
                 return flask.redirect("/")
             
 

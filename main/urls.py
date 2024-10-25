@@ -1,6 +1,7 @@
 from .settings import project
+from tour.models import Tour
 from home import render_home, home
-from tour import render_tour, tour
+from tour import render_tour ,render_particular_tour , tour
 from user import render_authorization, render_register, user
 
 
@@ -8,6 +9,9 @@ from user import render_authorization, render_register, user
 project.add_url_rule(rule='/', view_func=render_home, methods=['GET', 'POST'])
 
 project.add_url_rule(rule='/tour', view_func=render_tour, methods= ['GET','POST'])
+
+
+project.add_url_rule(rule=f'/tour_{Tour.id}', view_func=render_particular_tour, methods= ['GET','POST'])
 
 project.add_url_rule(rule='/registration', view_func=render_register, methods=['GET', 'POST'])
 
