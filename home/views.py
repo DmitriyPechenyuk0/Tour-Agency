@@ -23,7 +23,7 @@ def render_home():
     except exceptions.UndefinedError:
         flask.redirect('/registration')
 
-
+    # if current_user != None or current_user != '' or current_user != 
     return flask.render_template(template_name_or_list='home.html', user = user)
     
 

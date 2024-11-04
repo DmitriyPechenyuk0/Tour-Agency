@@ -9,14 +9,18 @@
 
 <header>
     <div class="header">
+        
         <a href="/tour" class="tour url">Путівки</a>
-        {% if not user %}
+
+        {% if user.is_authenticated %}
+            <div class="username"><a class="">{{ user.username }}</a></div>
+        {% else %}
+        
             <a href="/registration" class="registration url">Реєстрація</a>
             <a href="/authorization" class="authorization url">Авторизація</a>
+        
         {% endif %}
-        {% if user.username.type == str %}
-            <div class="username"><a class="">{{ user.username }}</a></div>
-        {% endif %}
+        
 
 
     </div>
