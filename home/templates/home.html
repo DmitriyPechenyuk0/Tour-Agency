@@ -1,9 +1,13 @@
 {% extends 'base.html' %}
 
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('home_app.static', filename = 'static/css/home.css' ) }}">
+{% endblock %}
+
+
 {% block title %}
 Туристична агенція
 {% endblock %}
-
 
 {% block content %}
 
@@ -17,12 +21,9 @@
         {% else %}
         
             <a href="/registration" class="registration url">Реєстрація</a>
-            <a href="/authorization" class="authorization url">Авторизація</a>
-        
+            <a href="/authorization" class="authorization url">Авторизація</a>  
+
         {% endif %}
-        
-
-
     </div>
 </header>
 <main>
@@ -42,7 +43,7 @@
 
 
 
-<style>
+<!-- <style>
     .header{
         display: flex;
         position: absolute;
@@ -122,6 +123,6 @@
         padding-left: 5px;
         font-family: 'Montserrat Regular';
     }
-</style>
+</style> -->
 
 {% endblock %}

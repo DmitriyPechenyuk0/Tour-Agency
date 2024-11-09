@@ -1,0 +1,79 @@
+.header{
+    display: flex;
+    position: absolute;
+    height: 60px;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    background-color: #ffffff;
+    text-align: center;
+}
+.username{
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: 'Montserrat Regular';
+}
+.url{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin-left: 60px;
+    margin-top: 20px;
+    font-family: 'Montserrat Regular';
+}
+.body{
+    font-family: 'Montserrat Regular';
+}
+.input-div{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    width: max-content;
+    align-items: center;
+}
+html{
+    background-color: #f1f1f1;
+}
+.form-div{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 140px;
+    background-color: #ffffff;
+    width: 600px;
+}
+.leave-feedback-title{
+    text-align: center;
+    font-family: 'Montserrat Regular';
+    font-size: medium;
+}
+.inputs{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.input{
+    height: auto;
+    width: 300px;
+    height: 20px;
+}
+.textarea{
+    resize: vertical;
+    height: 80px;
+    width: 300px;
+}
+.button-input{
+    margin-top: 20px;
+    width: 140px;
+    font-family: 'Montserrat Regular';
+}
+
+.input::placeholder{
+    padding-left: 5px;
+    font-family: 'Montserrat Regular';
+}
+.textarea::placeholder{
+    padding-left: 5px;
+    font-family: 'Montserrat Regular';
+}

@@ -8,7 +8,6 @@ Tour
     <header>
         <div class="header">
             <a href="/" class="main-header url">Головна</a>
-            <a href="/tour" class="tour-header url">Путівки</a>
             <a href="/registration" class="registration url">Реєстрація</a>
             <a href="/authorization" class="authorization url">Авторизація</a>
         </div>
@@ -20,6 +19,7 @@ Tour
             <p class="tour-title tour-component"><a class="url-to-page" href="/tour_{{ tour.id }}">{{ tour.title }}</a></p>
             <p class="tour-date tour-component">{{ tour.date }}</p>
             <p class="tour-country tour-component">{{ tour.country }}</p>
+            <button class="tour-id tour-component" name="buttonid" value='{{ tour.id }}' id="{{ tour.id }}"> Перейти до туру{{ tour.id }}</button>
         </div>
     {% endfor %}
     
