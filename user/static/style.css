@@ -1,46 +1,4 @@
-{% extends 'base.html' %}
-
-{% block title %}
-    Registration
-{% endblock %}
-
-{% block head %}
-<link rel="stylesheet" href="{{ url_for('user.static', filename = 'style.css' ) }}">
-{% endblock %}
-{% block content %}
-
-<header>
-    <a class = "home"  href="/">Home</a>
-    <a  class = "other" href="/registration">Registration</a>
-    <a class = "autho" href="/authorization">Authorization</a>
-</header>
-
-
-
-<div class=" form-div">
-    <h1 class="reg">Registration</h1>
-    <form class="form" method="post"></form>
-    
-    
-    <div class="center">
-            <h3 class="user">Login</h3>
-            <input type="text" name="username">
-        </div>
-
-        <div class="center">
-            <h3 class="user">Password</h3>
-            <input type="password" name="password">
-        </div>
-
-        
-        <button class="button" id="login-confirm-button" type="submit">Sign up</button>
-        
-    </form>
-</div>
-
-
-<style>
-    header{
+header{
     width: 100vw;
     height: 100px;
     background-color: #ffffff;
@@ -136,9 +94,3 @@ body{
 .form{ 
     margin-top: 150px;
 }
-</style>
-
-
-
-
-{% endblock %}
