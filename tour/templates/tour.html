@@ -16,10 +16,15 @@ Tour
         <p class="all-tours-title">Всі путівки</p>
     {% for tour in tours %}
         <div class="tour">
-            <p class="tour-title tour-component"><a class="url-to-page" href="/tour_{{ tour.id }}">{{ tour.title }}</a></p>
-            <p class="tour-date tour-component">{{ tour.date }}</p>
-            <p class="tour-country tour-component">{{ tour.country }}</p>
-            <button class="tour-id tour-component" name="buttonid" value='{{ tour.id }}' id="{{ tour.id }}"> Перейти до туру{{ tour.id }}</button>
+
+            <form method="post">
+                <button name='url' value="{{ tour.id }}">
+                     <p>{{ tour.title }}</p>
+                </button>
+                <p class="tour-title tour-component"></p>
+                <p class="tour-date tour-component">{{ tour.date }}</p>
+                <p class="tour-country tour-component">{{ tour.country }}</p>
+            </form>
         </div>
     {% endfor %}
     
@@ -27,6 +32,15 @@ Tour
     <style>
         body{
             font-family: 'Montserrat Regular';
+        }
+        button{
+            background-color: white;
+            border: none;
+            font-family: 'Montserrat Regular';
+        }
+        a{
+            text-decoration: none;
+            color: black;
         }
         .header{
             display: flex;

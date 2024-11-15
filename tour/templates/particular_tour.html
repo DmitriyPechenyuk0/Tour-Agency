@@ -13,6 +13,25 @@ Tour {{ tour.id }}
         <a href="/authorization" class="authorization url">Авторизація</a>
     </div>
 </header>
+<main>
+    {% if choosen_tour %}
+    <div>
+        
+        {% for tour in tour %}
+        
+            <h2>{{ tour.title }}</h2>
+            <p>Date: {{ tour.date }}</p>
+            <p>Country: {{ tour.country }}</p>
+            <p>Price: {{ tour.price }}</p>
+            <p>Description: {{ tour.descriprion }}</p>
+        
+            {% endfor %}
+    
+    </div>
+    {% endif %}
+
+</main>
+
 {% endblock %}
 <style>
     body{
