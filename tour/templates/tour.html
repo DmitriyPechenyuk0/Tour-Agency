@@ -4,6 +4,10 @@
 Tour
 {% endblock %}
 
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('tour.static', filename = 'static/css/tour.css' ) }}">
+{% endblock %}
+
 {% block content %}
     <header>
         <div class="header">
