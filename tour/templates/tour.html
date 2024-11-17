@@ -5,7 +5,7 @@ Tour
 {% endblock %}
 
 {% block link %}
-    <link rel="stylesheet" href="{{ url_for('tour.static', filename = 'static/css/tour.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('tour.static', filename = '/css/tour.css' ) }}">
 {% endblock %}
 
 {% block content %}
@@ -22,84 +22,13 @@ Tour
         <div class="tour">
 
             <form method="post">
-                <button name='url' value="{{ tour.id }}">
-                     <p>{{ tour.title }}</p>
+                <button class="tour-title" name='url' value="{{ tour.id }}" id="{{ tour.id }}">
+                     <p class="tour-title tour-component" >{{ tour.title }}</p>
                 </button>
-                <p class="tour-title tour-component"></p>
                 <p class="tour-date tour-component">{{ tour.date }}</p>
                 <p class="tour-country tour-component">{{ tour.country }}</p>
             </form>
         </div>
     {% endfor %}
-    
     </div>
-    <style>
-        body{
-            font-family: 'Montserrat Regular';
-        }
-        button{
-            background-color: white;
-            border: none;
-            font-family: 'Montserrat Regular';
-        }
-        a{
-            text-decoration: none;
-            color: black;
-        }
-        .header{
-            display: flex;
-            height: 60px;
-            margin-right: 5px;
-            margin-left: 5px;
-        }
-        .url{
-            display: flex;
-            text-decoration: none;
-            color: black;
-            margin-left: 60px;
-            margin-top: 20px;
-            font-family: 'Montserrat Regular';
-        }
-        .all-tours{
-            background-color: #F7F7F7;
-            width: 340px;
-            height: auto;
-            margin: 0 auto ;
-            border-radius: 20px;
-            padding-top: 30px;
-            padding-bottom: 10px;
-        }
-        .all-tours-title{
-            margin-top: 0px;
-            margin-bottom: 0px;
-            padding-top: 0px;
-            padding-bottom: 0px;
-            text-align: center;
-        }
-        .tour{
-            margin-left: 20px;
-            display: block;
-            flex-direction: column;
-            border: 0.5px solid black;
-            height: 80px;
-            width: 300px;
-            background-color: #FFFFFF;
-            border-radius: 20px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .tour-component{
-            text-align: center;
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-        .button-to-page{
-            height: 20px;
-            margin-left: 10px;
-            width: 280px;
-            border-radius: 20px;
-            border: 0.3px solid black;
-        }
-        
-    </style>
 {% endblock %}

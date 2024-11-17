@@ -5,5 +5,5 @@ tour = flask.Blueprint(
     import_name='tour',
     template_folder='templates',
     static_folder='static',
-    static_url_path='/static/'
+    static_url_path='/tour/'
     )

@@ -5,7 +5,7 @@ Tour {{ tour.id }}
 {% endblock %}
 
 {% block link %}
-    <link rel="stylesheet" href="{{ url_for('tour.static', filename = 'static/css/particular_tour.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('tour.static', filename = '/css/particular_tour.css' ) }}">
 {% endblock %}
 
 {% block content %}
@@ -20,11 +20,14 @@ Tour {{ tour.id }}
 <main>
     {% if choosen_tour %}
     <div>
-            <h2>{{ tour.title }}</h2>
-            <p>Date: {{ tour.date }}</p>
-            <p>Country: {{ tour.country }}</p>
-            <p>Price: {{ tour.price }}</p>
-            <p>Description: {{ tour.descriprion }}</p>
+        {% for tourid in tour %}
+
+            <h2>{{ tourid.title }}</h2>
+            <p>Date: {{ tourid.date }}</p>
+            <p>Country: {{ tourid.country }}</p>
+            <p>Price: {{ tourid.price }}</p>
+            <p>Description: {{ tourid.descriprion }}</p>
+        {% endfor %}
     </div>
     {% endif %}
 
