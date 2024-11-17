@@ -67,6 +67,7 @@ body{
 .user{
     font-size: 14px;
     font-weight: 300;
+
 }
 .reg{
     margin: 0 auto;
@@ -93,4 +94,12 @@ body{
 
 .form{ 
     margin-top: 150px;
+}
+
+.input{
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    width: 380px;
+
 }

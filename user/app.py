@@ -5,5 +5,5 @@ user = flask.Blueprint(
     import_name='user',
     template_folder='templates',
     static_folder='static',
-    static_url_path='/static/'
+    static_url_path='/user/'
 )

@@ -4,21 +4,39 @@
     Auth
 {% endblock %}
 
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('user.static', filename = 'author.css' ) }}">
+{% endblock %}
+
+
 
 {% block content %}
-<h1>Authorization</h1>
-<form method="post">
-    <h3>Username</h3>
+
+<header></header>
+    <a class = "home"  href="/">Home</a>
+    <a  class = "other" href="/registration">Registration</a>
+    <a class = "autho" href="/authorization">Authorization</a>
+</header>
+
+<div class=" form-div">
+    <h1 class="reg">Authorization</h1>
+    <form class="form" method="post"></form>
+    
+    
     <div class="center">
-        <input type="text" class="field" name="username">
-    </div>
-    <h3>Password</h3>
-    <div class="center">
-        <input type="password" class="field" name="password">
-    </div>
-    <div class="center">
-        <button id="login-confirm-button" type="submit">SEND</button>
-    </div>
-</form>
+            <h3 class="user">Login</h3>
+            <input class="input" type="text" name="username">
+        </div>
+
+        <div class="center">
+            <h3 class="user">Password</h3>
+            <input class="input" type="password" name="password">
+        </div>
+
+        
+        <button class="button" id="login-confirm-button" type="submit">Sign up</button>
+        
+    </form>
+</div>
 
 {% endblock %}
