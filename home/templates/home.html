@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block link %}
-    <link rel="stylesheet" href="{{ url_for('home_app.static', filename = 'static/css/home.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('home_app.static', filename = '/css/home.css' ) }}">
 {% endblock %}
 
 
@@ -32,100 +32,11 @@
             <div class="input-div"> 
                 <h1 class="leave-feedback-title">Залишити відгук</h1>
                 <input class="inputs input" placeholder="Ім'я" type="text"               name="name">
-                <input class="inputs input" placeholder="Електронна пошта" type="text"   name="email">
+                <input class="inputs input email" placeholder="Електронна пошта" type="text"   name="email">
                 <textarea class="inputs textarea" placeholder="Коментар" name="description"></textarea>
                 <input type="submit" class="button-input" value="Залишити відгук"        name="submit">
             </div>
         </form>
     </div>
 </main>
-
-
-
-<div>
-    <form action=""></form>
-
-</div>
-<style>
-    .header{
-        display: flex;
-        position: absolute;
-        height: 60px;
-        width: 100vw;
-        top: 0px;
-        left: 0px;
-        background-color: #ffffff;
-        text-align: center;
-    }
-    .username{
-        display: block;
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-        margin-top: 20px;
-        font-family: 'Montserrat Regular';
-    }
-    .url{
-        display: flex;
-        text-decoration: none;
-        color: black;
-        margin-left: 60px;
-        margin-top: 20px;
-        font-family: 'Montserrat Regular';
-    }
-    .body{
-        font-family: 'Montserrat Regular';
-    }
-    .input-div{
-        display: flex;
-        flex-direction: column;
-        height: max-content;
-        width: max-content;
-        align-items: center;
-    }
-    html{
-        background-color: #f1f1f1;
-    }
-    .form-div{
-        display: flex;
-        margin: 0 auto;
-        margin-top: 140px;
-        background-color: #ffffff;
-        width: 600px;
-    }
-    .leave-feedback-title{
-        text-align: center;
-        font-family: 'Montserrat Regular';
-        font-size: medium;
-    }
-    .inputs{
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
-    .input{
-        height: auto;
-        width: 300px;
-        height: 20px;
-    }
-    .textarea{
-        resize: vertical;
-        height: 80px;
-        width: 300px;
-    }
-    .button-input{
-        margin-top: 20px;
-        width: 140px;
-        font-family: 'Montserrat Regular';
-    }
-
-    .input::placeholder{
-        padding-left: 5px;
-        font-family: 'Montserrat Regular';
-    }
-    .textarea::placeholder{
-        padding-left: 5px;
-        font-family: 'Montserrat Regular';
-    }
-</style>
-
 {% endblock %}

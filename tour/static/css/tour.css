@@ -64,3 +64,8 @@ a{
     border-radius: 20px;
     border: 0.3px solid black;
 }
+.tour-title{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}

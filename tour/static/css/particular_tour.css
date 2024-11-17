@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    background-color: #ffffff;
+    position: absolute;
+    width: 100vw;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+}
+.header{
+    height: 60px;
+    width: 100vw;
+    display: flex;
+    text-align: center;
+}
+.tour{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    margin-top: 150px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 120px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    height: 800px;
+}
+body{
+    font-family: 'Montserrat Regular';
+    background-color: #f1f1f1;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 0 auto;
+}
+.tour-component{
+    font-size: 20px;
+}
+.title{
+    font-size: 36px;
+    margin-top: 60px;
+}

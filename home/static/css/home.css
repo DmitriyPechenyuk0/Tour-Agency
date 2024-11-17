@@ -43,11 +43,15 @@ html{
     margin-top: 140px;
     background-color: #ffffff;
     width: 600px;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
 }
 .leave-feedback-title{
     text-align: center;
     font-family: 'Montserrat Regular';
-    font-size: medium;
+    font-size: 36px;
 }
 .inputs{
     margin-top: 3px;
@@ -55,13 +59,25 @@ html{
 }
 .input{
     height: auto;
-    width: 300px;
-    height: 20px;
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 48px;
+}
+.email{
+    margin-bottom: 48px;
+}
+
+.button-input{
+    background-color: white;
+    height: 30px;
+    width: 200px;
 }
 .textarea{
     resize: vertical;
-    height: 80px;
-    width: 300px;
+    height: 270px;
+    width: 400px;
+    border-radius: 8px;
 }
 .button-input{
     margin-top: 20px;
@@ -76,4 +92,5 @@ html{
 .textarea::placeholder{
     padding-left: 5px;
     font-family: 'Montserrat Regular';
+    padding-top: 5px;
 }

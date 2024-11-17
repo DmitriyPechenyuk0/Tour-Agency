@@ -11,22 +11,27 @@ Tour {{ tour.id }}
 {% block content %}
 <header>
     <div class="header">
-        <a href="/" class="main-header url">Головна</a>
-        <a href="/tour" class="tour-header url">Путівки</a>
-        <a href="/registration" class="registration url">Реєстрація</a>
-        <a href="/authorization" class="authorization url">Авторизація</a>
+        {% if not user.is_authenticated %}
+            <a href="/" class="main-header url">Головна</a>
+            <a href="/tour" class="tour-header url">Путівки</a>
+            <a href="/registration" class="registration url">Реєстрація</a>
+            <a href="/authorization" class="authorization url">Авторизація</a>
+        {% else %}
+            <a href="/" class="main-header url">Головна</a>
+            <a href="/tour" class="tour-header url">Путівки</a>
+            <a class="authorization url">{{ user.username }}</a>
+        {% endif %}
     </div>
 </header>
 <main>
     {% if choosen_tour %}
-    <div>
+    <div class="tour">
         {% for tourid in tour %}
-
-            <h2>{{ tourid.title }}</h2>
-            <p>Date: {{ tourid.date }}</p>
-            <p>Country: {{ tourid.country }}</p>
-            <p>Price: {{ tourid.price }}</p>
-            <p>Description: {{ tourid.descriprion }}</p>
+            <h3 class="tour-component title " >{{ tourid.title }}</h2>
+            <p  class="tour-component" >Date: {{ tourid.date }}</p>
+            <p  class="tour-component" >Country: {{ tourid.country }}</p>
+            <p  class="tour-component" >Price: {{ tourid.price }}$</p>
+            <p  class="tour-component" >Description: {{ tourid.description }}</p>
         {% endfor %}
     </div>
     {% endif %}
