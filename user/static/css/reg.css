@@ -1,0 +1,103 @@
+header{
+    width: 100vw;
+    height: 60px;
+    background-color: #ffffff;
+    top: 0px;
+    left: 0px;
+    position:absolute ;
+    display: flex;
+}
+.form-div{
+    width: 600px;
+    height: 800px;
+    background-color: #ffffff;
+    margin:0 auto;
+    display: flex;
+    position: relative;
+    margin-top: 140px;
+    border-radius: 30px;
+    flex-direction: column;
+
+}
+body{
+    background-color: #f1f1f1;
+    font-family: 'Montserrat Regular';
+    text-decoration: none;
+}
+.url{
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    size: 16px;
+    margin-top: 40px;
+
+}
+.home{
+    display: block;
+    color: black;
+    margin-left: 60px;
+    margin-top: 20px;
+    text-decoration: none;
+
+}
+
+.other{
+    position: absolute;
+    left: 1480px;
+    top: 42px;
+    color: black;
+    text-decoration: none;
+    
+}
+.autho{
+    position: absolute;
+    left: 1740px;
+    top: 42px;
+    color: black;
+    text-decoration: none;
+}
+
+
+.center{
+    margin: 0 auto;
+    text-align: start;
+}
+.user{
+    font-size: 14px;
+    font-weight: 300;
+}
+.reg{
+    margin: 0 auto;
+    position: absolute;
+    display: flex;
+    margin-left: center;
+    left: 205px;
+    top: 20px;
+}
+
+
+.button{
+    border: 1px solid black;
+    border-radius: 12px;
+    width: 160px;
+    height: 60px;
+    size: 16px;
+    background-color: #f1f1f1;
+    font-family: 'Montserrat Regular';
+    top: 662px;
+    position: absolute;
+    left: 225px;
+}
+
+.form{ 
+    margin-top: 150px;
+}
+
+.input{
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 10px;
+    width: 380px;
+
+}
