@@ -19,7 +19,7 @@ Tour {{ tour.id }}
         {% else %}
             <a href="/" class="main-header url">Головна</a>
             <a href="/tour" class="tour-header url">Путівки</a>
-            <a class="authorization url">{{ user.username }}</a>
+            <a class="username url">{{ user.username }}</a>
         {% endif %}
     </div>
 </header>
@@ -27,7 +27,7 @@ Tour {{ tour.id }}
     {% if choosen_tour %}
     <div class="tour">
         {% for tourid in tour %}
-            <h3 class="tour-component title " >{{ tourid.title }}</h2>
+            <h3 class="tour-component title" >{{ tourid.title }}</h2>
             <p  class="tour-component" >Date: {{ tourid.date }}</p>
             <p  class="tour-component" >Country: {{ tourid.country }}</p>
             <p  class="tour-component" >Price: {{ tourid.price }}$</p>
@@ -37,7 +37,6 @@ Tour {{ tour.id }}
     {% endif %}
 
 </main>
-
 {% endblock %}
 <style>
     body{

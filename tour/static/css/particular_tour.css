@@ -1,17 +1,33 @@
 header{
-    display: flex;
-    background-color: #ffffff;
+    display: block;
     position: absolute;
-    width: 100vw;
-    height: 60px;
     top: 0px;
     left: 0px;
 }
 .header{
-    height: 60px;
-    width: 100vw;
     display: flex;
-    text-align: center;
+    height: 60px;
+    margin-right: 5px;
+    margin-left: 0px;
+    background-color: #FFFFFF;
+    position: relative;
+    margin-top: 0px;
+    width: 100vw;
+
+}
+.username{
+    display: block;
+    justify-content: end;
+    padding-right: 20px;
+    width: 100%;
+}
+.url{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-family: 'Montserrat Regular';
 }
 .tour{
     display: flex;
@@ -22,7 +38,7 @@ header{
     margin: 0 auto;
     margin-top: 120px;
     background-color: #ffffff;
-    border-radius: 8px;
+    border-radius: 20px;
     height: 800px;
 }
 body{
