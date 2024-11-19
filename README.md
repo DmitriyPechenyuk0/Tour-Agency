@@ -16,7 +16,7 @@ git clone https://github.com/DmitriyPechenyuk0/Tour-Agency.git; cd Tour-Agency; 
 
 # __Інформація про проект__  
 
-
+Цей проєкт було створено з метою практики над модулем flask
 # __Корисні посилання стосовно проекту__
 
 * [FigJam](https://www.figma.com/board/Elnz9ANimp41b5wyzRcFNi/FigJam-Tour-Agency?node-id=0-1&node-type=canvas&t=K54qw7plKLopTqv6-0) Проекту  
