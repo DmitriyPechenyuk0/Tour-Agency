@@ -7,7 +7,7 @@ __Склад Команди__:
 # __Інструкція до встановлення проекту__
 Для Windows
 ```bash
-git clone https://github.com/DmitriyPechenyuk0/Tour-Agency.git; cd Tour-Agency; python -m venv virtualenv; virtualenv\Scripts\activate.bat; pip install -r requirements.txt; cd main; flask --app settings db init; flask --app settings db migrate; flask --app settings db upgrade
+git clone https://github.com/DmitriyPechenyuk0/Tour-Agency.git; cd Tour-Agency; python -m venv virtualenv; \virtualenv\Scripts\activate.bat; pip install -r requirements.txt; cd main; flask --app settings db init; flask --app settings db migrate; flask --app settings db upgrade
 ```
 Для MacOs / Linux
 ```bash
