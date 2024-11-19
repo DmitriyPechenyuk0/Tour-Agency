@@ -9,7 +9,7 @@ __Склад Команди__:
 ```bash
 git clone https://github.com/DmitriyPechenyuk0/Tour-Agency.git; cd Tour-Agency; python -m venv virtualenv; virtualenv\Scripts\activate.bat; pip install -r requirements.txt; cd main; flask --app settings db init; flask --app settings db migrate; flask --app settings db upgrade
 ```
-Для Unix-подібних
+Для MacOs / Linux
 ```bash
 git clone https://github.com/DmitriyPechenyuk0/Tour-Agency.git; cd Tour-Agency; python3 -m venv virtualenv; source virtualenv/bin/activate; pip3 install -r requirements.txt; cd main; flask --app settings db init; flask --app settings db migrate; flask --app settings db upgrade
 ```
