@@ -67,6 +67,7 @@ body{
 .user{
     font-size: 14px;
     font-weight: 300;
+    margin-left: 20;
 }
 .reg{
     margin: 0 auto;
@@ -100,5 +101,6 @@ body{
     padding: 10px;
     border-radius: 10px;
     width: 380px;
+    margin-left: 20;
 
 }
