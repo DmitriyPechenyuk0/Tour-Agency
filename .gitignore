@@ -2,3 +2,5 @@ __pycache__/
 instance/
 venv/
 .DS_Store/
+migrations/
+data.db/

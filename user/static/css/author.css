@@ -58,7 +58,6 @@ body{
     text-decoration: none;
 }
 
-
 .center{
     margin: 0 auto;
     text-align: start;
@@ -97,6 +96,7 @@ a{
 
 .form{ 
     margin-top: 150px;
+    padding-left: 100px;
 }
 
 .input{
